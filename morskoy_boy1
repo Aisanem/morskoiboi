@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import messagebox
 import time
+import random
+
 
 tk = Tk()
 app_running = True
@@ -76,6 +78,22 @@ def add_to_all(event):
 
 canvas.bind_all( "<Button - 1>", add_to_all)# levaya knopka mushi
 canvas.bind_all( "<Button - 3>", add_to_all)# pravaya knopka mushi
+
+def generate_enemy_ships():
+    global enemy_ships
+    ships_list = []
+    for i in range(0, ships):
+        ships_list.append(random.choice([ship_len1, ship_len2, ship_len3]))
+        print(ships_list)
+
+        #podschet summarnoi dinnu korablei
+        sum_1_all_ships = sum(ships_list)
+        sum_1_enemy = 0
+        while sum_1_enemy != sum_1_all_ships
+            pass
+
+
+generate_enemy_ships()
 
 while app_running:
     if app_running:
